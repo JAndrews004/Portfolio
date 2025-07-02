@@ -1,0 +1,21 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/Input/IA_Move.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/Input/IA_Look.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/Input/IMC_Player.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/Input/IA_Crouch.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/Input/IA_Sprint.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/MyGameMode.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/MyPlayerController.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/BP_MyCharacter.uasset",
+				"C:/Users/ja990/OneDrive/Documents/GitHub/Portfolio/01_Basics/Unreal movement/FP_Movement_EI/Content/MyContent/Input/IA_Jump.uasset"
+			]
+		}
+	]
+}
