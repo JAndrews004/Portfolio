@@ -59,9 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\MoveCamera.cs" />
-    <Compile Include="Assets\Scripts\MouseMovement.cs" />
     <Compile Include="Assets\Scripts\Sliding.cs" />
+    <Compile Include="Assets\Scripts\MouseMovement.cs" />
+    <Compile Include="Assets\Scripts\MoveCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
