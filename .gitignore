@@ -1,0 +1,47 @@
+# Ignore build artifacts and temporary folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+.vscode/
+*.VC.db
+
+# Ignore build files
+*.pdb
+*.obj
+*.exe
+*.dll
+*.lib
+*.app
+*.dylib
+*.so
+
+# Ignore Unreal-generated project files
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userprefs
+*.ipch
+*.log
+*.tlog
+*.tmp
+*.cache
+*.csproj
+*.sln
+*.xcodeproj
+*.xcworkspace
+*.xcconfig
+
+# Ignore autosaved and backup files
+*.autosave
+*.backup
+*.old
+*.orig
+
+# Ignore Mac-specific files
+.DS_Store
+
+# Ignore packaging temp files
+Build/
