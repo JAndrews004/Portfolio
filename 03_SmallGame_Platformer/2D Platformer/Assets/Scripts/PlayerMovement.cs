@@ -19,16 +19,21 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jumping")]
     public float jumpHeight;
     private int jumpsLeft = 2;
+    public AudioClip clip;
+    private AudioSource audioSource;
 
     Rigidbody2D rb;
     float horizontalInput;
     float verticalInput;
+
+    private MovingPlatform currentPlatform;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
         moveSpeed = walkSpeed;
+        audioSource = GetComponent<AudioSource>();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -48,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpsLeft = 2;
         }
+        
     }
     private void GetInput()
     {
@@ -82,37 +88,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        
-        if (horizontalInput < 0)
-        {
-            rb.AddForce(Vector2.left*moveSpeed, ForceMode2D.Force);
+        Vector2 velocity = rb.velocity;
 
-            if(rb.velocity.x < 0)
-            {
-                rb.velocity = rb.velocity.normalized * moveSpeed;
-            }
-            
-            
-        }
-        if (horizontalInput > 0)
+        if (currentPlatform != null && grounded)
         {
-            rb.AddForce(Vector2.right * moveSpeed, ForceMode2D.Force);
-            
-            if (rb.velocity.x > 0)
-            {
-                rb.velocity = rb.velocity.normalized * moveSpeed;
-            }
+            velocity.x = currentPlatform.platformVelocity.x;
         }
 
-        else
+        // Apply horizontal input (works in air and on ground)
+        if (horizontalInput != 0)
         {
-            Vector2 velocity = rb.velocity;
+            velocity.x += horizontalInput * moveSpeed;
+
+            //clamp to prevent overspeeding
+            velocity.x = Mathf.Clamp(velocity.x, -moveSpeed, moveSpeed);
+        }
+        else if (grounded)
+        {
+            // Apply drag when idle on ground
             velocity.x = Mathf.Lerp(velocity.x, 0, groundDrag * Time.fixedDeltaTime);
-            rb.velocity = velocity;
         }
-        
-        
 
+        rb.velocity = new Vector2(velocity.x, velocity.y);
 
     }
 
@@ -121,12 +118,30 @@ public class PlayerMovement : MonoBehaviour
         if(jump == 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
+            audioSource.PlayOneShot(clip);
             rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
         }
         else
         {
+            audioSource.PlayOneShot(clip);
             rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
         }
         
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            currentPlatform = collision.gameObject.GetComponent<MovingPlatform>();
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            currentPlatform = null;
+        }
     }
 }
