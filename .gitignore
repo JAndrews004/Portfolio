@@ -45,3 +45,10 @@ Saved/
 
 # Ignore packaging temp files
 Build/
+
+#!/bin/sh
+if git diff --cached | grep -q 'SecurityToken='; then
+  echo "❌ Commit blocked: SecurityToken found in staged changes."
+  exit 1
+fi
+chmod +x .git/hooks/pre-commit
