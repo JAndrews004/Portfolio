@@ -61,7 +61,7 @@ This portfolio demonstrates a progression from **foundational mechanics** to **a
 - Emphasis on AI state management and perception systems
 
 🔗 Folder: `05_AI_Game/`  
-🔗 Unity AI Source: https://github.com/JAndrews004/COMP2007CW2
+🔗 Unity AI Source: https://github.com/JAndrews004/COMP2007CW2   
 🔗 Itch.io link: https://jandrews004.itch.io/postman-apocalypse
 
 ---
@@ -107,8 +107,9 @@ A complete game developed during the **Brackeys 2025.2 Game Jam**.
 - Demonstrates ability to scope and deliver a playable experience
 
 🔗 Project Repository:  
-https://github.com/JAndrews004/BrackeysGameJam2025.2
-🔗 Itch.io link: https://jandrews004.itch.io/temple-of-risks
+https://github.com/JAndrews004/BrackeysGameJam2025.2   
+🔗 Itch.io link:   
+https://jandrews004.itch.io/temple-of-risks
 ---
 
 ### 🎓 Undergraduate Dissertation Project
