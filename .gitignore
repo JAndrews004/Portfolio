@@ -10,8 +10,6 @@ Saved/
 # Ignore build files
 *.pdb
 *.obj
-*.exe
-*.dll
 *.lib
 *.app
 *.dylib
