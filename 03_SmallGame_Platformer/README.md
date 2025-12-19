@@ -38,7 +38,7 @@ This project highlights **level design**, **player-environment interaction**, an
 ### 📦 Build
 
 **Download:**  
-👉[Unity 2D Platformer Build](./Builds/2D_Platformer_Windows.zip)
+👉[Unity 2D Platformer Build](./Build/2D_Platformer_Windows.zip)
 
 ### 📸 Screenshots / GIFs
 
