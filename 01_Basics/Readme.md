@@ -48,7 +48,7 @@ Movement is physics based and uses `Rigidbody` forces for movement and interacti
 ### 📸 Screenshots / GIFs
 
 #### Sprint & Slide Demo
-![unity-sprint-slide.gif](./Media/Unity_01_Movement.gif)
+![unity-sprint-slide.gif](../Media/Unity_01_Movement.gif)
 
 ---
 
@@ -90,7 +90,7 @@ This project highlights:
 ### 📸 Screenshots / GIFs
 
 #### Sprint & Slide Demo
-![unreal_basics_EI.gif](./Media/Unreal_01_Movement_EI.gif)
+![unreal_basics_EI.gif](../Media/Unreal_01_Movement_EI.gif)
 
 ---
 
