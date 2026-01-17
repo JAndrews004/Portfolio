@@ -40,9 +40,9 @@ A Unity project demonstrating a simple health system with player interaction:
 
 ### 📸 GIFs
 
-![unity_DOT.gif](./Media/Unity_02_DOT.gif)
-![unity_heal.gif](./Media/Unity_02_Heal.gif)
-![unity_DOT.gif](./Media/Unity_02_Door.gif)
+![unity_DOT.gif](../Media/Unity_02_DOT.gif)
+![unity_heal.gif](../Media/Unity_02_Heal.gif)
+![unity_DOT.gif](../Media/Unity_02_Door.gif)
 
 ---
 
