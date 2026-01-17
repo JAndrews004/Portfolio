@@ -47,12 +47,8 @@ Movement is physics based and uses `Rigidbody` forces for movement and interacti
 
 ### 📸 Screenshots / GIFs
 
-#### Movement Overview
-![unity-movement-1.png](./images/unity-movement-1.png)  
-
-
 #### Sprint & Slide Demo
-![unity-sprint-slide.gif](./images/unity-sprint-slide.gif)
+![unity-sprint-slide.gif](./Media/Unity_01_Movement.gif)
 
 ---
 
@@ -91,15 +87,10 @@ This project highlights:
 | Sprint      | Left Shift |
 | Crouch      | Ctrl |
 
-### 📦 Build Downloads
+### 📸 Screenshots / GIFs
 
-*(Place Unreal builds here when available)*
-
-- **Unreal Build (Enhanced Input)**  
-  👉 `Unreal_Basics_Enhanced.exe` *(placeholder)*
-
-- **Unreal Build (Legacy Input)**  
-  👉 `Unreal_Basics_Legacy.exe` *(placeholder)*
+#### Sprint & Slide Demo
+![unreal_basics_EI.gif](./Media/Unreal_01_Movement_EI.gif)
 
 ---
 

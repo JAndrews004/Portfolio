@@ -38,11 +38,11 @@ A Unity project demonstrating a simple health system with player interaction:
 **Download:**  
 👉[Unity Gameplay Build](./Builds/Unity_Interactive_Elements_Windows.zip)
 
-### 📸 Screenshots / GIFs
+### 📸 GIFs
 
-- `images/unity-healthbar.png` → Health bar UI  
-- `images/unity-lava-damage.gif` → Lava damage demonstration  
-- `images/unity-door.gif` → Door interaction  
+![unity_DOT.gif](./Media/Unity_02_DOT.gif)
+![unity_heal.gif](./Media/Unity_02_Heal.gif)
+![unity_DOT.gif](./Media/Unity_02_Door.gif)
 
 ---
 
@@ -66,17 +66,6 @@ An Unreal Engine project demonstrating health management and environmental hazar
 | Crouch              | Ctrl |
 | Interact            | E |
 
-### 📦 Build
-
-The Windows build is provided as a zipped folder.
-
-**Download:**  
-👉[Unreal Enhanced Input Gameplay Build](./Builds/Unreal_Gameplay_Enhanced.zip)
-
-### 📸 Screenshots / GIFs
-
-- `images/unreal-healthbar.png` → Health bar UI  
-- `images/unreal-lava.gif` → Lava damage demonstration  
 
 ## 🛠️ Technologies Used
 

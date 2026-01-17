@@ -40,12 +40,11 @@ This project highlights **level design**, **player-environment interaction**, an
 **Download:**  
 👉[Unity 2D Platformer Build](./2D_Platformer_Windows.zip)
 
-### 📸 Screenshots / GIFs
+### 📸 GIFs
 
-- `images/platformer-level.png` → Overview of a platforming level  
-- `images/platformer-collectables.gif` → Collectables interaction  
-- `images/platformer-checkpoint.gif` → Checkpoint respawn demonstration  
-- `images/platformer-moving-platform.gif` → Moving platform mechanics  
+![unity_Checkpoint.gif](./Media/Unity_03_Checkpoint.gif)
+![unity_collectable.gif](./Media/Unity_03_Collectables.gif)
+![unity_platforms.gif](./Media/Unity_03_Platforms.gif)
 
 ---
 
