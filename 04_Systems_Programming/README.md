@@ -39,9 +39,9 @@ This system demonstrates **data-driven design** and **scalable gameplay systems*
 
 ### 📸 Screenshots / GIFs
 
-- `images/unity-weapon-inventory.png` → Weapon selection UI  
-- `images/unity-weapon-fire.gif` → Weapon firing demonstration  
-- `images/unity-weapon-stats.png` → Example Scriptable Object configuration  
+
+![unity-weapon_firing.gif](../Media/Unity_04_Weapons.gif) 
+![unity-weapon_SO.png](../Media/Unity_04_Weapon_SO.png)
 
 ---
 
@@ -75,9 +75,6 @@ This project emphasizes **performance optimization** and **persistent game data 
 | Interact    | E |
 
 ### 📦 Build
-
-**Download:**  
-[Unreal Systems Build](./Builds/Unreal_Systems_Enhanced.zip)
 
 ### 📸 Screenshots / GIFs
 
