@@ -42,9 +42,9 @@ This project highlights **level design**, **player-environment interaction**, an
 
 ### 📸 GIFs
 
-![unity_Checkpoint.gif](./Media/Unity_03_Checkpoint.gif)
-![unity_collectable.gif](./Media/Unity_03_Collectables.gif)
-![unity_platforms.gif](./Media/Unity_03_Platforms.gif)
+![unity_Checkpoint.gif](../Media/Unity_03_Checkpoint.gif)
+![unity_collectable.gif](../Media/Unity_03_Collectables.gif)
+![unity_platforms.gif](../Media/Unity_03_Platforms.gif)
 
 ---
 
