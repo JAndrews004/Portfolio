@@ -1,0 +1,16 @@
+#container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+
+    border-radius: 6px;
+}
+
+Label {
+    color: white;
+    font-size: 14px;
+    -unity-font-style: normal;
+}

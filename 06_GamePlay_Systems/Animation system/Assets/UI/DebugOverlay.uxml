@@ -1,0 +1,18 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/DebugOverlay.uss?fileID=7433441132597879392&amp;guid=10599e5fd107b2c47838fef478090486&amp;type=3#DebugOverlay"/>
+    <ui:VisualElement name="rootVisualElement" style="flex-grow: 1;">
+        <ui:GroupBox name="container" style="height: 482px; width: 297px;">
+            <ui:Label text="[PLAYER MOVEMENT DEBUG]" name="Title" style="height: 27px; width: 197px;"/>
+            <ui:Label text="Label" name="stateLabel" style="height: 30px; width: 55px;"/>
+            <ui:Label text="Label" name="speedLabel" style="height: 30px; width: 55px;"/>
+            <ui:Label text="Label" name="directionLabel" style="height: 30px; width: 55px;"/>
+            <ui:Label text="Label" name="directionRawLabel" style="height: 30px; width: 55px;"/>
+            <ui:Label text="Label" name="groundedLabel" style="height: 30px; width: 55px;"/>
+            <ui:Label text="--------------------------------" name="Divider" style="height: 30px; width: 55px;"/>
+            <ui:Label text="--- Animation ---" name="AnimationTitle" style="height: 26px; width: 203px;"/>
+            <ui:Label text="--- Animation ---" name="clipLabel" style="height: 26px; width: 203px;"/>
+            <ui:Label text="Label" name="airLayerWeightLabel"/>
+            <ui:Label text="Label" name="upperLayerWeightLabel" style="height: 24px;"/>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>
