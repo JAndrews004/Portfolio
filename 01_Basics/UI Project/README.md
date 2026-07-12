@@ -295,6 +295,7 @@ Potential future additions include:
 *(Add a GIF or short video showcasing the project.)*
 
 ![Demo](Images/Demo.gif)
+![Demo](Images/Demo1.gif)
 
 ---
 
