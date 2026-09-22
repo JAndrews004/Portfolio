@@ -1,152 +1,258 @@
-# Game Development Portfolio 🎮
+# Jonathan Andrews – Game Development Portfolio
 
-Hi, I’m **Jonathan Andrews**, a Game Development student focusing on **gameplay programming**, **systems design**, and **AI behaviour** using **Unity**, **Unreal Engine**, and lower-level technologies such as **OpenGL** and **SDL2**.
+Hi, I'm **Jonathan Andrews**, a Computer Science (Games Development) graduate focused on **gameplay programming**, **AI systems**, **animation**, and **technical game development**. I primarily work in **Unity (C#)**, with experience in **Unreal Engine (C++)**, **OpenGL**, and **SDL2**.
 
-This portfolio demonstrates a progression from **foundational mechanics** to **advanced systems and AI**, alongside academic and technical projects exploring engine-level concepts.
-
----
-
-## 📌 Core Portfolio Projects
-
-### 🟢 01 — Basics: Character Movement
-**Unity & Unreal Engine**
-
-- Unity: Rigidbody-based character movement (walk, sprint, jump, crouch, slide)
-- Unreal: Character movement using the Enhanced Input System
-
-🔗 Folder: `01_Basics/`
+My projects focus on building reusable gameplay systems, AI behaviours, procedural animation, and engine-level programming. I enjoy solving technical problems and creating scalable, maintainable game architecture.
 
 ---
 
-### 🟡 02 — Gameplay Mechanics
-**Unity & Unreal Engine**
+# Featured Projects
 
-- Unity: Health system, lava damage, pickups, door interaction, UI
-- Unreal: Health system with environmental hazards
-- Builds on movement systems from Project 01
-
-🔗 Folder: `02_Gameplay_Mechanics/`
-
----
-
-### 🔵 03 — 2D Platformer
+## 01 — Advanced Character Controller & Procedural Animation
 **Unity**
 
-- 2D platformer with moving platforms
-- Checkpoints and collectables
-- Basic UI for score and progress tracking
+A modular third-person character controller built with a strong emphasis on animation programming and reusable architecture.
 
-🔗 Folder: `03_Platformer/`
+### Features
 
----
+- Walk, sprint, crouch and jump mechanics
+- Camera-relative movement
+- Animator Controller with blend trees
+- Procedural Foot IK
+- Dynamic pelvis adjustment for uneven terrain
+- Foot planting with intelligent lock/unlock logic
+- Ground detection using configurable raycasts
+- Scriptable Object configuration system
+- Animation Rigging integration
 
-### 🟣 04 — Systems
-**Unity & Unreal Engine**
+### Technical Highlights
 
-- Unity: Reusable weapon system using Scriptable Objects
-- Unreal: Object pooling system and save/load system
-- Focus on modular and reusable architecture
-
-🔗 Folder: `04_Systems/`
-
----
-
-### 🔴 05 — Enemy AI
-**Unity & Unreal Engine**
-
-- Unreal: Enemy AI with patrol, chase, and search behaviours
-- Unity: Enemy AI with patrol, chase, and search plus:
-  - Light-based player detection
-  - Sound detection based on player movement speed
-- Emphasis on AI state management and perception systems
-
-🔗 Folder: `05_AI_Game/`  
-🔗 Unity AI Source: https://github.com/JAndrews004/COMP2007CW2   
-🔗 Itch.io link: https://jandrews004.itch.io/postman-apocalypse
+- Custom procedural animation system
+- Runtime animation blending
+- Layered IK over authored animations
+- Modular movement architecture
+- Data-driven configuration
 
 ---
 
-## 🧩 Additional & Academic Projects
+## 02 — Turn-Based Combat System (Dissertation)
+**Unity**
 
-These projects explore **engine fundamentals**, **graphics programming**, and **rapid development**, complementing the core gameplay-focused portfolio above.
+A large-scale dissertation project exploring modular combat architecture inspired by creature-collection RPGs.
 
----
+### Features
 
-### 🧠 OpenGL 3D Scene (University Module)
-A university project focused on **low-level graphics programming** using **OpenGL**.
+- Turn management system
+- Modular ability framework
+- Status effect system
+- Elemental type effectiveness
+- Combat modifier pipeline
+- Character stat system
+- Enemy AI
+- Data-driven abilities using Scriptable Objects
 
-- Manual creation of a 3D scene
-- Camera systems and transformations
-- Lighting and rendering fundamentals
-- Strong focus on maths and the graphics pipeline
+### Technical Highlights
 
-🔗 Source Code:  
-https://github.com/JAndrews004/COMP3016CW2
+- Modular gameplay architecture
+- Extensible combat framework
+- Reusable gameplay systems
+- Separation of data and behaviour
 
----
-
-### ⚙️ SDL2 Engine-Level Development
-Projects developed using **SDL2**, focusing on foundational engine concepts.
-
-- Custom game loop and delta time management
-- Keyboard input handling via SDL events
-- Window creation and rendering setup
-- Manual state and memory management
-- Understanding of engine structure beyond Unity/Unreal
-
-🔗 Source Code:  
-https://github.com/JAndrews004/3016-CW1
+Repository:
+- <https://github.com/JAndrews004/COMP3000-JonathanAndrews>
 
 ---
 
-### 🎮 Brackeys Game Jam 2025.2
-A complete game developed during the **Brackeys 2025.2 Game Jam**.
+## 03 — GMTK Game Jam 2026 – Defuser
+**Unity**
 
-- Rapid prototyping under time constraints
-- Focus on core mechanics and polish
-- Demonstrates ability to scope and deliver a playable experience
+A complete game created during the GMTK Game Jam within a limited development timeframe.
 
-🔗 Project Repository:  
-https://github.com/JAndrews004/BrackeysGameJam2025.2   
-🔗 Itch.io link:   
-https://jandrews004.itch.io/temple-of-risks
----
+### Features
 
-### 🎓 Undergraduate Dissertation Project
-An ongoing final-year dissertation project exploring advanced technical and design concepts.
+- Complete gameplay loop developed during the jam
+- Bomb disposal gameplay
+- UI implementation
+- Gameplay balancing and iteration
+- Polish focused on player feedback and game feel
+- Delivered a finished, playable game within the deadline
 
-- Large-scale independent project
-- Focus on research, implementation, and evaluation
-- Represents the most in-depth academic work in the portfolio
+### Technical Highlights
 
-🔗 Dissertation Repository:  
-https://github.com/JAndrews004/COMP3000-JonathanAndrews
+- Rapid prototyping
+- Fast iteration
+- Production planning and scope management
+- Working effectively under time constraints
 
----
+Repository:
+- <https://github.com/JAndrews004/GMTK2026Jam>
 
-## 🛠️ Skills Demonstrated
-
-- Gameplay programming
-- AI behaviour and state machines
-- Player movement and interaction systems
-- Health and UI systems
-- Object pooling and performance optimisation
-- Save/load systems
-- Scriptable Object–based data-driven design
-- Unity (C#) and Unreal Engine (Enhanced Input)
-- OpenGL graphics programming
-- SDL2 engine-level development
+Playable Build:
+- <https://jandrews004.itch.io/defuser>
 
 ---
 
-## 🎯 Focus
+## 04 — OpenGL Graphics Programming
+**C++ / OpenGL**
 
-This portfolio focuses on **programming systems and technical gameplay**, rather than art or asset creation.  
-Projects are designed to clearly demonstrate **problem solving**, **system design**, and **engine understanding**.
+A university graphics programming project exploring modern rendering techniques and the graphics pipeline.
+
+### Features
+
+- Blinn-Phong lighting
+- Multiple light sources
+- Shadow mapping
+- Particle system
+- Geometry shaders
+- Normal mapping
+- Camera system
+- FreeType text rendering
+
+### Technical Highlights
+
+- GLSL shader programming
+- Graphics pipeline knowledge
+- Real-time rendering
+- Mathematics for graphics programming
+
+Repository:
+- <https://github.com/JAndrews004/COMP3016CW2>
 
 ---
 
-## 📬 Contact
+## 05 — UI Systems
+**Unity**
 
-GitHub: https://github.com/JAndrews004
-LinkedIn: https://www.linkedin.com/in/jonathan-andrews-6670a628b/ 
+A collection of reusable UI systems developed across multiple projects.
+
+### Features
+
+- Main menus
+- Pause menus
+- HUD implementation
+- Health bars
+- Objective tracking
+- Gameplay feedback
+- Win and game over screens
+
+### Technical Highlights
+
+- Event-driven UI updates
+- Reusable UI architecture
+- Separation between gameplay and presentation
+- Modular UI components
+
+---
+
+## 06 — SDL2 Engine Programming
+**C++ / SDL2**
+
+Projects exploring engine fundamentals without relying on commercial game engines.
+
+### Features
+
+- Custom game loop
+- Delta time management
+- Input handling
+- Rendering
+- Collision detection
+- State management
+- Window management
+
+### Technical Highlights
+
+- Engine architecture
+- Low-level programming
+- Memory management
+- Real-time application design
+
+Repository:
+- <https://github.com/JAndrews004/3016-CW1>
+
+---
+
+## 07 — Brackeys Game Jam 2025.2
+**Unity**
+
+A complete game developed during the Brackeys Game Jam.
+
+### Features
+
+- Puzzle-focused gameplay
+- Rapid prototyping
+- Gameplay polish
+- Complete game delivered within the jam deadline
+
+Repository:
+- <https://github.com/JAndrews004/BrackeysGameJam2025.2>
+
+Playable Build:
+- <https://jandrews004.itch.io/temple-of-risks>
+
+---
+
+# Technical Skills
+
+## Gameplay Programming
+
+- Gameplay systems
+- Character controllers
+- Combat systems
+- Interaction systems
+- Scriptable Object architecture
+
+## Animation
+
+- Animator Controllers
+- Blend Trees
+- Animation Rigging
+- Procedural Foot IK
+- Foot planting
+- Runtime animation blending
+
+## UI
+
+- HUD systems
+- Menus
+- Gameplay feedback
+- Event-driven UI
+- Health systems
+
+## Graphics
+
+- OpenGL
+- GLSL
+- Shadow mapping
+- Lighting
+- Particle systems
+- Geometry shaders
+
+## Programming
+
+- C#
+- C++
+- Unity
+- Unreal Engine
+- OpenGL
+- SDL2
+- Git
+
+---
+
+# Current Learning Focus
+
+I'm currently expanding my skills in:
+
+- Advanced AI systems
+- Multiplayer networking
+- Performance optimisation
+- Procedural animation
+- Technical game architecture
+- Graphics programming
+- Tool development
+
+---
+
+# About This Portfolio
+
+This portfolio focuses on demonstrating technical programming ability rather than artwork. The projects showcase gameplay systems, animation programming, graphics programming, software architecture, and problem solving, with an emphasis on writing clean, reusable, and scalable code.
