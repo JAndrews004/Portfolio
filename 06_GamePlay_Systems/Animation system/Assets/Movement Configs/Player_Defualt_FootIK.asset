@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeaf522f42ceda547ba6fd9881d39d11, type: 3}
+  m_Name: Player_Defualt_FootIK
+  m_EditorClassIdentifier: Assembly-CSharp::FootIKSettings
+  WalkableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  GroundOffset: 0.07
+  RaycastDistance: 1.5
+  PlantDistance: 0.12
+  LiftDistance: 0.18
+  VelocityThreshold: 0.5
+  MaxHipOffset: 0.5
+  HipRayDistance: 2
+  HipOffset: 0.5
+  MaxHipTilt: 12
+  HipTiltMultiplier: 25
+  WeightBlendSpeed: 4
+  HipHeightBlendSpeed: 5
+  HipRotationBlendSpeed: 5
+  FootPositionBlendSpeed: 5
+  FootRotationBlendSpeed: 5

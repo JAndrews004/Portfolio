@@ -1,0 +1,28 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/HUD/HUD.uss?fileID=7433441132597879392&amp;guid=548c4ffa7d9b5024b9ecf8ad5eaef25f&amp;type=3#HUD"/>
+    <ui:VisualElement name="TextContainer" style="flex-grow: 1; height: 80%;">
+        <ui:Label text="Find the key for the secret door." name="CurrentObjective" style="-unity-text-align: upper-center; font-size: 30px; color: rgb(61, 255, 6);"/>
+        <ui:Label text="Press &apos;E&apos; to open" name="PromptLabel" style="-unity-text-align: middle-center; font-size: 30px; height: 223px; color: rgb(0, 0, 0);"/>
+        <ui:Label text="Level: 5" name="LevelLabel" style="position: absolute; height: 47px; width: 207px; font-size: 28px; -unity-text-align: middle-left;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="BarsContainer" style="flex-grow: 1; position: absolute; height: 43px; width: 545px; top: auto; left: 25px; bottom: 25px;">
+        <ui:VisualElement name="HealthBarBackground" style="flex-grow: 1; background-color: rgb(52, 58, 71); position: absolute; height: 18px; width: 539px;">
+            <ui:VisualElement name="DamageBar" class="damage-bar" style="flex-grow: 1; background-color: rgb(232, 65, 24); position: absolute; height: 100%; width: 100%; background-size: 100% 100%;"/>
+            <ui:VisualElement name="HealthBarFill" class="health-bar" style="flex-grow: 1; background-color: rgb(76, 209, 55); position: relative; height: 100%; width: 100%; background-size: 100% 100%;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="StaminaBarBackground" style="flex-grow: 1; background-color: rgb(47, 54, 64); position: absolute; height: 9px; width: 538px; top: 25px; left: 1px;">
+            <ui:VisualElement name="StaminaBarFill" style="flex-grow: 1; background-color: rgb(0, 168, 255); position: relative; height: 100%; width: 100%; top: 0; left: 0; transition-property: width; transition-duration: 0.3s; transition-timing-function: ease-in;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="AbilityIconContainer" style="flex-grow: 1; justify-content: flex-start; align-items: center; flex-direction: row-reverse;">
+        <ui:Image name="Ability1Icon" source="project://database/Assets/Ability%20Icons/skill_icons2.png?fileID=2800000&amp;guid=94c424baeeb4a3c41826fccd04d43e8c&amp;type=3#skill_icons2" class="ability-icons" style="height: 101px; width: 108px; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px;">
+            <ui:VisualElement name="Ability1Fill" class="ability-fill" style="flex-grow: 1; background-color: rgba(152, 152, 152, 0.45); position: absolute; width: 100%; height: 100%;"/>
+        </ui:Image>
+        <ui:Image name="Ability2Icon" source="project://database/Assets/Ability%20Icons/skill_icons3.png?fileID=2800000&amp;guid=144f2c78ba359b043a99b194457667de&amp;type=3#skill_icons3" class="ability-icons" style="height: 101px; width: 108px; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px;">
+            <ui:VisualElement name="Ability2Fill" class="ability-fill" style="flex-grow: 1; background-color: rgba(152, 152, 152, 0.45);"/>
+        </ui:Image>
+        <ui:Image name="Ability3Icon" source="project://database/Assets/Ability%20Icons/skill_icons1.png?fileID=2800000&amp;guid=920cfd07da99b114c839d58fdd03a87f&amp;type=3#skill_icons1" class="ability-icons" style="height: 101px; width: 108px; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px;">
+            <ui:VisualElement name="Ability3Fill" class="ability-fill" style="flex-grow: 1; background-color: rgba(152, 152, 152, 0.45); width: 100%; height: 100%; top: auto;"/>
+        </ui:Image>
+    </ui:VisualElement>
+</ui:UXML>

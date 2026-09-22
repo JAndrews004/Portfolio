@@ -1,0 +1,34 @@
+[2026-07-16T09:50:36.025Z] [INFO] relay.startup port=9001 mcpClientPort=9002 editorPid=5844
+[2026-07-16T09:50:36.027Z] [INFO] log Command line arguments: ["bun","B:/~BUN/root/relay_win.exe","--relay","--port","9001","--mcp-client-port","9002","--editor-pid","5844","--shutdown-delay","180","--log-dir","C:\\Users\\ja990\\OneDrive\\Documents\\GitHub\\Portfolio\\06_GamePlay_Systems\\Animation system\\Logs"]
+[2026-07-16T09:50:36.026Z] [INFO] log === RELAY SERVER STARTED === (unity-ai-relay v1.0.12-build.96)
+[2026-07-16T09:50:36.027Z] [INFO] log Parsed config: {"port":9001,"mcpClientPort":9002,"editorPid":"5844","shutdownDelaySeconds":180}
+[2026-07-16T09:50:36.026Z] [INFO] log Starting relay server...
+[2026-07-16T09:50:36.028Z] [INFO] log Initializing relay components...
+[2026-07-16T09:50:36.029Z] [INFO] log Creating RelayEditor...
+[2026-07-16T09:50:36.034Z] [INFO] log WebSocket server started
+[2026-07-16T09:50:36.035Z] [INFO] log Relay server initialization completed
+[2026-07-16T09:50:36.035Z] [INFO] log MCP Client initialized at port: 9002
+[2026-07-16T09:50:36.050Z] [WARN] log [shell-env] Shell environment did not contain a PATH variable
+[2026-07-16T09:50:36.072Z] [INFO] log Unity MCP Relay server started | Port: 9002 | Endpoints: /mcp/start-server, /mcp/stop-server, /mcp/server-status, /mcp/call-tool
+[2026-07-16T09:50:36.656Z] [INFO] log Unity client connected with ID: editor-5844-g8etqn (relay 1.0.12-build.96)
+[2026-07-16T09:50:36.656Z] [INFO] connection.established clientId=editor-5844-g8etqn port=9001
+[2026-07-16T09:51:08.162Z] [DEBUG] log [SharedTask] get preferences: starting new task
+[2026-07-16T09:51:08.519Z] [DEBUG] log [GatewayPrefs] seeded preferences with user's environment {"Claude Code":{},"Codex":{},"Gemini":{}}
+[2026-07-16T09:51:08.531Z] [DEBUG] message.received type=gateway/providers_request
+[2026-07-16T09:51:08.574Z] [DEBUG] log [cursor] getCursorPostInstall: loginExec command="agent"
+[2026-07-16T09:51:08.834Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-07-16T09:51:08.835Z] [DEBUG] log Sent provider versions: 2 providers
+[2026-07-16T09:51:08.837Z] [DEBUG] log [GatewayPrefs] getPreferences completed successfully with 4 providers (persisted=false)
+[2026-07-16T09:51:08.962Z] [DEBUG] log [provider-version] Fetched versions: [{"id":"codex","version":"0.9.5","isCustom":true},{"id":"gemini","isCustom":true}]
+[2026-07-16T09:51:08.962Z] [DEBUG] log [GatewayPrefs] Emitted PreferencesUpdated with 2 versions
+[2026-07-16T09:53:13.514Z] [INFO] log Domain reload signal received from client editor-5844-g8etqn
+[2026-07-16T09:53:13.515Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-07-16T09:53:13.516Z] [DEBUG] acp.queue.pause depth=0
+[2026-07-16T09:53:14.734Z] [DEBUG] log Relay->Editor communication is blocked
+[2026-07-16T09:53:14.735Z] [DEBUG] acp.queue.pause depth=0
+[2026-07-16T09:53:14.736Z] [INFO] log Client disconnected - blocking and caching for recovery
+[2026-07-16T09:53:14.736Z] [WARN] connection.lost clientId=null
+[2026-07-16T09:53:14.737Z] [WARN] log Client disconnected - sessions will persist until auto-shutdown, reason: Client disconnected
+[2026-07-16T09:53:14.737Z] [INFO] log Auto-shutdown timer started due to client disconnection
+[2026-07-16T09:56:15.388Z] [INFO] log Auto-shutdown timer fired after 180s inactivity, shutting down: Dedicated client disconnected
+[2026-07-16T09:56:15.602Z] [INFO] log Shutdown: Initiating graceful shutdown: Dedicated client disconnected

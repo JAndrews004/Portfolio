@@ -1,0 +1,18 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Pause%20Menu/PauseMenu.uss?fileID=7433441132597879392&amp;guid=ff684050925ce2a46a9a3b5d96440442&amp;type=3#PauseMenu"/>
+    <ui:VisualElement name="Background" class="background hidden" style="flex-grow: 1; padding-top: 150px; padding-right: 150px; padding-bottom: 150px; padding-left: 150px;">
+        <ui:VisualElement name="PauseMenuContainer" class="container" style="flex-grow: 1; width: 445px; height: 250px; aspect-ratio: auto; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; padding-left: 0; justify-content: center;">
+            <ui:Button text="Resume" name="ResumeButton" class="button" style="height: 64px; margin-top: 20px; margin-bottom: 20px;"/>
+            <ui:Button text="Settings&#10;" name="SettingsButton" class="button" style="height: 64px; margin-top: 20px; margin-bottom: 20px;"/>
+            <ui:Button text="Main Menu" name="MainMenuButton" class="button" style="height: 64px; margin-top: 20px; margin-bottom: 20px;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsContainer" class="container settings-hidden" style="top: 112px; left: 754px; position: absolute; height: 592px; width: 576px; font-size: 30px; align-items: stretch; justify-content: space-between; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; right: auto; bottom: 136px; transition-property: opacity, translate, scale; transition-duration: 0.1s, 0.25s, 0.25s; transition-timing-function: ease-in, ease, ease; transition-delay: 0s, 0s, 0s;">
+            <ui:Label text="Settings" name="SettingsTitle" class="label" style="height: 75px; width: 100%; -unity-text-align: middle-center; white-space: pre-wrap; font-size: 70px;"/>
+            <ui:Slider label="Volume" value="100" high-value="0" name="VolumeSlider" show-input-field="false" low-value="-80" class="slider" style="height: 44px; width: 531px; flex-direction: row; align-self: auto; justify-content: center; align-items: flex-start;"/>
+            <ui:DropdownField label="Resolution" name="ResolutionDropdown" style="font-size: 30px; width: 489px;"/>
+            <ui:EnumField label="Quality" value="Left" type="UnityEngine.UIElements.UIR.RenderTree+AllowedClasses, UnityEngine.UIElementsModule" include-obsolete-values="true" name="QualityDropdown" style="width: 350px; font-size: 30px;"/>
+            <ui:Toggle label="Fullscreen" value="false" name="FullscreenToggle" style="font-size: 30px; width: 183px;"/>
+            <ui:Button text="Close" name="CloseSettingsButton" class="button" style="width: 153px; white-space: normal; height: 49px; font-size: 30px;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,108 @@
+VisualElement {
+}
+
+.container {
+    -unity-background-scale-mode: stretch-to-fill;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    flex-grow: 1;
+    width: 694px;
+    top: 113px;
+    position: absolute;
+    height: 734px;
+    left: 511px;
+    bottom: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(64, 114, 158);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.button {
+    background-color: rgb(245, 246, 250);
+    scale: 1 1;
+    transition-property: scale;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    font-size: 52px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.button:hover {
+    scale: 1.05 1.05 1.05;
+    background-color: rgb(220, 221, 225);
+    transition-timing-function: ease-out;
+}
+
+.hidden {
+    display: flex;
+    visibility: hidden;
+}
+
+.label {
+}
+
+.credits-container {
+    background-color: rgba(106, 106, 106, 0.7);
+}
+
+.slider {
+    font-size: 30px;
+    -unity-text-align: middle-left;
+    background-color: rgba(94, 94, 94, 0);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    --Value: 0;
+}
+
+.button:active {
+    scale: 0.95 0.95 0.95;
+    background-color: rgb(245, 246, 250);
+    transition-property: scale, background-color;
+    transition-duration: 0.25s, 0.25s;
+}
+
+.settings-hidden {
+    color: rgb(0, 0, 0);
+    background-color: rgb(64, 114, 158);
+    transition-timing-function: ease, ease, ease-in-out;
+    opacity: 0;
+    transition-property: scale, opacity, translate;
+    transition-duration: 0.15s, 0.25s, 0.5s;
+    transform-origin: center;
+    translate: 0 -150%;
+}
+
+.settings-defaul {
+}
+
+
+
+.credits-start {
+    translate: 0 -300%;
+    transition-property: translate;
+    transition-duration: 60s;
+    transition-timing-function: linear;
+}

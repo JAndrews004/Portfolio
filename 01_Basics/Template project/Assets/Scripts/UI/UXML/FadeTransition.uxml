@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Scene%20transition/FadeTransition.uss?fileID=7433441132597879392&amp;guid=f8a77f9baabe35c44b8779265ea3cb9e&amp;type=3#FadeTransition"/>
+    <ui:VisualElement name="FadeOverlay"/>
+</ui:UXML>

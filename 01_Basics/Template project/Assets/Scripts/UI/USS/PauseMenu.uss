@@ -1,0 +1,54 @@
+VisualElement {
+}
+
+.background {
+    background-color: rgba(140, 140, 140, 0.67);
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.button:hover {
+    background-color: rgb(220, 221, 225);
+}
+
+.button {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    font-size: 50px;
+    background-color: rgb(245, 246, 250);
+}
+
+.container {
+    background-color: rgb(52, 58, 71);
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.settings-hidden {
+    color: rgb(0, 0, 0);
+    background-color: rgb(25, 42, 86);
+    transition-timing-function: ease, ease, ease-in-out;
+    opacity: 0;
+    transition-property: scale, opacity, translate;
+    transition-duration: 0.15s, 0.25s, 0.5s;
+    transform-origin: center;
+    translate: 0 -150%;
+    scale: 0.75 0.75 0.75;
+}

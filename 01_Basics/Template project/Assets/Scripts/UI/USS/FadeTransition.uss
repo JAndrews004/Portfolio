@@ -1,0 +1,17 @@
+#FadeOverlay
+{
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: black;
+
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
