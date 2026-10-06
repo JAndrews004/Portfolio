@@ -14,9 +14,8 @@ Demonstrates the complete AI behaviour pipeline:
 
 **Patrol → Hear Noise → Investigate → See Player → Alert → Chase → Lose Player → Search → Return to Patrol**
 
-![AI Behaviour Showcase](Media/AIBehaviour.gif)
+![AI Behaviour Showcase](Media/AIBehaviour1.gif)(Media/AIBehaviour2.gif)
 
-[Watch the full AI Behaviour showcase](VIDEO_LINK)
 
 ### AI Communication
 
@@ -24,7 +23,6 @@ Demonstrates multiple AI agents sharing information through the communication sy
 
 ![AI Communication Showcase](Media/AICommunication.gif)
 
-[Watch the full AI Communication showcase](VIDEO_LINK)
 
 ---
 
