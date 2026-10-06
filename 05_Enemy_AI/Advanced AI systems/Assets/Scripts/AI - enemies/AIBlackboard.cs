@@ -63,10 +63,11 @@ public class AIBlackboard
 
 
         primarySuspicionSource = controller.suspicionSystem.GetPrimarySuspicionSource();
+        Target = primarySuspicionSource.source;
 
         if (primarySuspicionSource.source != null)
         {
-            if(primarySuspicionSource.type == StimulusType.Vision)
+            if(primarySuspicionSource.type == StimulusType.Vision || primarySuspicionSource.type == StimulusType.Communication)
             {
                 LastKnownPosition = primarySuspicionSource.position;
                 HasLastKnownPosition = true;
@@ -76,6 +77,7 @@ public class AIBlackboard
                 LastHeardPosition = primarySuspicionSource.position;
                 HasLastHeardPosition = true;
             }
+            
         }     
     }
 

@@ -9,13 +9,13 @@ public class AICommunicationReceiver
     }
     public void Receive(AICommunicationEvent e)
     {
-        Debug.Log($"Received communication from {e.Sender.communicationGroup.CommunicationGroupName}");
+        Debug.Log($"Received communication from {e.Sender.communicationGroup.CommunicationGroupName} with a confidence of {e.Confidence}");
         Stimulus stimulus = new Stimulus();
         stimulus.position = e.Position;
         stimulus.type = StimulusType.Communication;
         stimulus.source = e.Target;
 
-        stimulus.strength = 0.25f;
+        stimulus.strength = 1f;
 
         stimulus.confidence = e.Confidence;
         

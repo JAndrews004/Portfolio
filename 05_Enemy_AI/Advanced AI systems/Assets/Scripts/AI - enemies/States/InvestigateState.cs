@@ -86,9 +86,11 @@ public class InvestigateState : BaseState
         {
             CommunicationChannel ch = new CommunicationChannel();
 
-            ch.groupA = channel.groupA;
-            ch.groupB = channel.groupB;
-            ch.CommunicationRange = channel.CommunicationRange;
+            if (controller.AccessibleChannels.Count > 0)
+            {
+                ch.channelData = controller.AccessibleChannels[0];
+            }
+            else { return; }
 
             AIChannelRequestEvent e = new AIChannelRequestEvent();
             e.channel = ch;

@@ -51,9 +51,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   suspicionIncreaseRate: 50
-  suspicionDecreaseRate: 3
+  suspicionDecreaseRate: 7
   visionSuspicionRate: 50
   hearingSuspicionRate: 5
+  communicationSuspicionRate: 7500
   maxSearchRadius: 20
   minimumSearchRadius: 10
   searchDuration: 2.5

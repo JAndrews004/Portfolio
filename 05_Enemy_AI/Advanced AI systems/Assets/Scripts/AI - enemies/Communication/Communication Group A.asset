@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Communication Group A
   m_EditorClassIdentifier: Assembly-CSharp::CommunicationGroup
   CommunicationGroupName: A
-  CommunicationRange: 10
+  CommunicationRange: 1000

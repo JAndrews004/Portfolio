@@ -20,7 +20,7 @@ public class AIMovement : IAIMovement
     {
         agent.nextPosition = controller.transform.position;
 
-        if (!agent.hasPath || agent.pathPending)
+        if (agent.pathPending)
             return;
 
         if (HasReachedDestination())
@@ -30,7 +30,13 @@ public class AIMovement : IAIMovement
             return;
         }
 
-        Vector3 dir = (agent.steeringTarget - controller.transform.position).normalized;
+        if (!agent.hasPath)
+        {
+            //agent.CalculatePath();
+            return;
+        }
+        //Vector3 dir = (agent.steeringTarget - controller.transform.position).normalized;
+        Vector3 dir = agent.desiredVelocity.normalized;
 
         controller.SetMotorData(
             dir,
@@ -48,6 +54,7 @@ public class AIMovement : IAIMovement
 
     public bool HasReachedDestination()
     {
+
         if (agent.pathPending)
             return false;
 

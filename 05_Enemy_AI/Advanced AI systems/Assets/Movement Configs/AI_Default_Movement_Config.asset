@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AI_Default_Movement_Config
   m_EditorClassIdentifier: Assembly-CSharp::MovementConfig
   crouchSpeed: 1.5
-  walkSpeed: 3
-  sprintSpeed: 5.5
+  walkSpeed: 2.5
+  sprintSpeed: 3.5
   rotationSpeed: 10
   gravity: -9.81
   jumpForce: 1.5

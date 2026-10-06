@@ -40,21 +40,21 @@ public class AnimationEventReceiver : MonoBehaviour
         {
             return;
         }
-        Debug.Log("Footstep event");
+        //Debug.Log("Footstep event");
         footstepSystem?.TriggerFootstep(motor.GetSpeed()/motor.movementConfig.sprintSpeed);
         footstepAudio?.PlayFootstep();
     }
 
     public void OnJumpStart()
     {
-        Debug.Log("Jump start event");
+        //Debug.Log("Jump start event");
         movementEventSystem?.HandleJumpStart();
         movementAudio?.PlayJumpStart();
     }
 
     public void OnLand()
     {
-        Debug.Log("Land event");
+        //Debug.Log("Land event");
         movementEventSystem?.HandleLand();
         movementAudio?.PlayLand();
     }

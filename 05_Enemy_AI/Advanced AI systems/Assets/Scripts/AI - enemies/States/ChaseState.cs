@@ -1,4 +1,7 @@
+using NUnit.Framework;
 using System;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ChaseState : BaseState
@@ -71,6 +74,9 @@ public class ChaseState : BaseState
                 return;
             }
         }
+        //Debug.Log($"Time since target lost: {lostTargetTimer} and LOS: {controller.aIPerception.GetLineOfSight(target)}");
+       
+        //Debug.Log($"Has last hear pos: {controller.blackboard.HasLastHeardPosition}, Has last known pos: {controller.blackboard.HasLastKnownPosition}");
 
         if (controller.AIMovement.HasReachedDestination())
         {
@@ -83,16 +89,20 @@ public class ChaseState : BaseState
 
         totalChaseTime += Time.deltaTime;
         // After chasing for x seconds request emergency channel
-        if (totalChaseTime >= controller.config.chaseCommunicationTimer && channelRequested)
+        if (totalChaseTime >= controller.config.chaseCommunicationTimer && !channelRequested)
         {
             channelRequested = true;
+            Debug.Log("Requesting emergency channel");
             foreach (CommunicationChannelSO channel in controller.AccessibleChannels)
             {
                 CommunicationChannel ch = new CommunicationChannel();
 
-                ch.groupA = channel.groupA;
-                ch.groupB = channel.groupB;
-                ch.CommunicationRange = channel.CommunicationRange;
+                if(controller.AccessibleChannels.Count > 0)
+                {
+                    ch.channelData = controller.AccessibleChannels[0];
+                }
+                else { return; }
+                
 
                 AIChannelRequestEvent e = new AIChannelRequestEvent();
                 e.channel = ch;
@@ -120,9 +130,11 @@ public class ChaseState : BaseState
         {
             CommunicationChannel ch = new CommunicationChannel();
 
-            ch.groupA = channel.groupA;
-            ch.groupB = channel.groupB;
-            ch.CommunicationRange = channel.CommunicationRange;
+            if (controller.AccessibleChannels.Count > 0)
+            {
+                ch.channelData = controller.AccessibleChannels[0];
+            }
+            else { return; }
 
             AIChannelRequestEvent e = new AIChannelRequestEvent();
             e.channel = ch;
@@ -143,7 +155,7 @@ public class ChaseState : BaseState
 
     void ChaseEnd()
     {
-        
+        controller.SetMotorData(Vector3.zero, 0f, false);
         OnChaseEnded?.Invoke();
     }
 }

@@ -3,12 +3,9 @@ using UnityEngine;
 
 public class CommunicationChannel
 {
-    public CommunicationGroup groupA;
-    public CommunicationGroup groupB;
+    public CommunicationChannelSO channelData;
 
     public bool IsActive;
-    public float CommunicationRange;
-
     public List<IDetectableEntity> Requesters = new List<IDetectableEntity> { };
 }
 

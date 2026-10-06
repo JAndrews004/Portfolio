@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        
+        //Time.timeScale = 0.25f;
         
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

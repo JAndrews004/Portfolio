@@ -29,6 +29,7 @@ public class AIConfig : ScriptableObject
     public float suspicionDecreaseRate = 1f;
     public float visionSuspicionRate = 1f;
     public float hearingSuspicionRate = 1f;
+    public float communicationSuspicionRate = 1f;   
 
     [Header("Search state")]
     public float maxSearchRadius = 10.0f;

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CommunicationChannelSO
   groupA: {fileID: 11400000, guid: bf82382037c580342abb9801df897746, type: 2}
   groupB: {fileID: 11400000, guid: efcd7c2559b8b2143bbe06d92324f134, type: 2}
-  CommunicationRange: 20
+  CommunicationRange: 2000

@@ -276,7 +276,11 @@ public class SuspicionSystem
         {
             return controller.config.hearingSuspicionRate;
         }
-
+        if(stimulus.type == StimulusType.Communication)
+        {
+            //Debug.Log($"Using communication rate value of {controller.config.communicationSuspicionRate}");
+            return controller.config.communicationSuspicionRate;
+        }
 
         return 0f;
     }
@@ -358,6 +362,7 @@ public class SuspicionSystem
 
         foreach(KeyValuePair<(IDetectableEntity, StimulusType), SuspicionSource> suspicionSource in suspicionSources)
         {
+            /*
             if(suspicionSource.Value.type == StimulusType.Vision)
             {
                 //Debug.Log($"{suspicionSource.Value.currentSuspicionContribution}, Vision");
@@ -366,7 +371,11 @@ public class SuspicionSystem
             {
                 //Debug.Log($"{suspicionSource.Value.currentSuspicionContribution}, Hearing");
             }
-
+            else if (suspicionSource.Value.type == StimulusType.Communication)
+            {
+                //Debug.Log($"{suspicionSource.Value.currentSuspicionContribution}, Communication");
+            }
+            */
 
             if (suspicionSource.Value.currentSuspicionContribution > currentSource.currentSuspicionContribution)
             {
